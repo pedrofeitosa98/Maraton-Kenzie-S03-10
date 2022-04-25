@@ -11,14 +11,14 @@ function positions(firstPlace, secondPlace, lastPlace) {
         podio.splice(1, 1)
         secondPlace = podio[1]
     }
-    if (podio[1] == "Daniel"){
+    else if (podio[1] == "Daniel"){
         podio.unshift(podio[1])
         podio.splice(2, 1)
         firstPlace = podio[0]
     }
-    console.log(podio[0] + " na 1ª posição")
-    console.log(podio[1] + " na 2ª posição")
-    console.log(podio[2] + " na 3ª posição")
+    console.log("1º Colocado - " + podio[0])
+    console.log("2º Colocado - " + podio[1])
+    console.log("3º Colocado - " + podio[2])
     return
 }
 
